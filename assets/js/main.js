@@ -140,6 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Init swiper slider with 1 slide at once in desktop view
    */
+  setTimeout( ()=>{
   new Swiper('.slides-1', {
     speed: 600,
     loop: true,
@@ -158,6 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     }
   });
+  },2000);
 
   /**
    * Init swiper slider with 3 slides at once in desktop view
